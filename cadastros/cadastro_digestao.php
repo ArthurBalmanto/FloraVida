@@ -19,6 +19,37 @@
 				</div>
 			</form>
 		</div>
+		<?php
+			$database = new Database();	
+			$db = $database->getConnection();
+
+			$c_diges_ler = new C_Digestao($db);
+			$stmt = $c_diges_ler->ler();
+
+			echo "<div>";
+			echo "<table class='table table-hover table-responsive table-bordered'>";
+				echo "<tr>";
+					echo "<th>ID</th>";
+					echo "<th>NOME</th>";
+					echo "<th>AÇÃO</th>";
+				echo "</tr>";
+			
+				while ($row_dest= $stmt->fetch(PDO::FETCH_ASSOC)){
+					extract($row_dest);
+					echo "<tr>";
+						echo "<td>{$id_diges}</td>";
+						echo "<td>{$nome_diges}</td>";
+
+						echo "<td>";
+							// edit and delete button is here
+							echo "<a href='atualiza_produto.php?id={$id_diges}' class='btn btn-default left-margin'>Atualliza</a>";
+							echo "<a delete-id='{$id_diges}' class='delete-object'>Delete</a>";
+						echo "</td>";
+					echo "</tr>";
+				}
+				echo"</table>";
+			echo "</div>";
+		?>
 	</body>
 </html>
 <?php	

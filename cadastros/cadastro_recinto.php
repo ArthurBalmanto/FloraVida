@@ -1,3 +1,7 @@
+<?php
+	    include_once "../conexao/database.php";
+		include_once "../classes/c_recinto.php";
+?>
 <html>
 	<head>
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
@@ -21,11 +25,45 @@
 				</div>
 			</form>
 		</div>
+		<?php
+			$database = new Database();	
+			$db = $database->getConnection();
+
+			$c_recinto_ler = new C_Recinto($db);
+			$stmt = $c_recinto_ler->ler();
+
+			echo "<div>";
+			echo "<table class='table table-hover table-responsive table-bordered'>";
+				echo "<tr>";
+					echo "<th>CÓDIGO</th>";
+					echo "<th>NOME</th>";
+					echo "<th>AREA</th>";
+					echo "<th>TAMANHO</th>";
+					echo "<th>AÇÃO</th>";
+				echo "</tr>";
+			
+				while ($row_recinto = $stmt->fetch(PDO::FETCH_ASSOC)){
+					extract($row_recinto);
+					echo "<tr>";
+						echo "<td>{$id_rec}</td>";
+						echo "<td>{$nome_rec}</td>";
+						echo "<td>{$area_rec}</td>";
+						echo "<td>{$tamanho}</td>";
+
+						echo "<td>";
+							// edit and delete button is here
+							echo "<a href='atualiza_produto.php?id={$id_rec}' class='btn btn-default left-margin'>Atualizar</a>";
+							echo "<a delete-id='{$id_rec}' class='delete-object'>Delete</a>";
+						echo "</td>";
+					echo "</tr>";
+				}
+				echo"</table>";
+			echo "</div>";
+		?>
 	</body>
 </html>
 <?php	
-    include_once "../conexao/database.php";
-    include_once "../classes/c_recinto.php";
+
     
 	if($_POST){
 		//conexão com o banco
