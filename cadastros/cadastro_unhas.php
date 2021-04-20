@@ -50,8 +50,6 @@
 			echo "</div>";
 		?>
 		</div>
-		<div>teste apagar</div>
-		<div>apagar 2</div>
 	</body>
 </html>
 <?php	
