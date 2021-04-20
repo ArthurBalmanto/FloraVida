@@ -28,6 +28,20 @@
 			}else{
 				return false;
 			}
-		}	
+		}
+		function ler(){
+			//select all data
+			$query = "SELECT
+						id_status, nome_status
+					FROM
+						" . $this->table_name . "
+					ORDER BY
+						nome_status";  
+	 
+			$stmt = $this->conn->prepare( $query );
+			$stmt->execute();
+	 
+			return $stmt;
+		}		
 	} 
 ?>
