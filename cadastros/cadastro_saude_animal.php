@@ -14,7 +14,7 @@
 			<form  action="cadastro_saude_animal.php" method="POST" enctype="multipart/form-data">
 				
 				<div class="form-group">
-					<h1 class="display-3 text-muted">Cadastro</h1> 
+					<h1 class="display-3 text-muted">Avaliação da Saúde do Animal</h1> 
 				</div>
 
                 <div class="form-group col-sm-6"> 

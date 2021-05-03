@@ -5,7 +5,7 @@
 		private $host = "localhost";
 		private $db_name = "bd_floravida";
 		private $username = "root";
-		private $password = "banco123";
+		private $password = "123456";
 		public $conn;
 	 
 		// get the database connection
