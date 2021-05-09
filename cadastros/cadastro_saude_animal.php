@@ -1,3 +1,7 @@
+<?php
+	    include_once "../conexao/database.php";
+		
+?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -20,7 +24,7 @@
                 <div class="form-group col-sm-6"> 
                     <label for="nome_cad">RGHV</label>
                     <?php
-                        include_once "../conexao/database.php";
+                        
                         include_once "../classes/c_cad_principal.php";
 
                         $database = new Database();
@@ -48,7 +52,7 @@
 							<div class="form-group col-sm-6"> 
 								<label for="nome_cad">Nivel Consciência:</label>
 								<?php
-									include_once "../conexao/database.php";
+									
 									include_once "../classes/c_nivel_cons.php";
 
 									$database = new Database();
@@ -72,7 +76,7 @@
 							<div class="form-group col-sm-6"> 
 								<label for="nome_cad">Postura:</label>
 								<?php
-									include_once "../conexao/database.php";
+									
 									include_once "../classes/c_postura.php";
 
 									$database = new Database();
@@ -107,7 +111,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Respiração:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_respiracao.php";
 
 									$database = new Database();
@@ -144,7 +148,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Digestório:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_digestorio.php";
 
 									$database = new Database();
@@ -168,7 +172,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Fezes:</label>
 								<?php
-									include_once "../conexao/database.php";
+									
 									include_once "../classes/c_fezes.php";
 
 									$database = new Database();
@@ -192,7 +196,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Bico:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_bicos.php";
 
 									$database = new Database();
@@ -220,7 +224,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Cabeça/ Face:</label>
 								<?php
-									include_once "../conexao/database.php";
+							
 									include_once "../classes/c_cabeca.php";
 
 									$database = new Database();
@@ -244,7 +248,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Narinas/ Olfatos:</label>
 								<?php
-									include_once "../conexao/database.php";
+							
 									include_once "../classes/c_narina.php";
 
 									$database = new Database();
@@ -268,7 +272,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Ouvido / Audição:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_ouvidos.php";
 
 									$database = new Database();
@@ -292,7 +296,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Olhos Visão:</label>
 								<?php
-									include_once "../conexao/database.php";
+							
 									include_once "../classes/c_olhos.php";
 
 									$database = new Database();
@@ -320,7 +324,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Pálpebras:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_palpebras.php";
 
 									$database = new Database();
@@ -344,7 +348,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Penas do Corpo:</label>
 								<?php
-									include_once "../conexao/database.php";
+							
 									include_once "../classes/c_penas.php";
 
 									$database = new Database();
@@ -368,7 +372,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Musculatura Quilha do Esterno:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_musculatura.php";
 
 									$database = new Database();
@@ -444,7 +448,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Mucosa Oral:</label>
 								<?php
-									include_once "../conexao/database.php";
+									
 									include_once "../classes/c_mucosa.php";
 
 									$database = new Database();
@@ -468,7 +472,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Mucosa Palpebral:</label>
 								<?php
-									include_once "../conexao/database.php";
+									
 									include_once "../classes/c_mucosa.php";
 
 									$database = new Database();
@@ -492,7 +496,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Pele Corpo:</label>
 								<?php
-									include_once "../conexao/database.php";
+									
 									include_once "../classes/c_pele_corpo.php";
 
 									$database = new Database();
@@ -516,7 +520,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Cavidade Abdominal:</label>
 								<?php
-									include_once "../conexao/database.php";
+									
 									include_once "../classes/c_cavidade.php";
 
 									$database = new Database();
@@ -544,7 +548,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Cloaca:</label>
 								<?php
-									include_once "../conexao/database.php";
+									
 									include_once "../classes/c_cloaca.php";
 
 									$database = new Database();
@@ -568,7 +572,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Ossos MA Direiro:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_osso.php";
 
 									$database = new Database();
@@ -592,7 +596,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Ossos MA Esquerdo:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_osso.php";
 
 									$database = new Database();
@@ -616,7 +620,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Empenamento Rêmiges Direito:</label>
 								<?php
-									include_once "../conexao/database.php";
+							
 									include_once "../classes/c_empenamento.php";
 
 									$database = new Database();
@@ -644,7 +648,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Empenamento Rêmiges Esquerdo:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_empenamento.php";
 
 									$database = new Database();
@@ -679,7 +683,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Osso MP Direito:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_ossos_mp.php";
 
 									$database = new Database();
@@ -703,7 +707,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Osso MP Esquerdo:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_ossos_mp.php";
 
 									$database = new Database();
@@ -731,7 +735,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Unhas:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_unhas.php";
 
 									$database = new Database();
@@ -755,7 +759,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Empenamento Retrizes (Cauda):</label>
 								<?php
-									include_once "../conexao/database.php";
+							
 									include_once "../classes/c_empenamento.php";
 
 									$database = new Database();
@@ -779,7 +783,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Grau de Sociabilidade - CHEGADA:</label>
 								<?php
-									include_once "../conexao/database.php";
+								
 									include_once "../classes/c_sociabilidade.php";
 
 									$database = new Database();
@@ -803,7 +807,7 @@
                             <div class="form-group col-sm-6"> 
 								<label for="nome_cad">Setorização:</label>
 								<?php
-									include_once "../conexao/database.php";
+							
 									include_once "../classes/c_setorizacao.php";
 
 									$database = new Database();

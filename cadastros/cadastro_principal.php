@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Cadastro Principal</title>
+		<title>Cadastro Principal Animal</title>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, inicial-scale=1.0"/>
 		<link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
@@ -12,9 +12,8 @@
 		<div class="container">
 			<!--FORMULÁRIO DE CADASTRO-->
 			<form  action="cadastro_principal.php" method="POST" enctype="multipart/form-data">
-				
 				<div class="form-group">
-					<h1 class="display-3 text-muted">Cadastro</h1> 
+					<h1 class="display-3 text-muted">Cadastro Principal Animal </h1> 
 				</div>
 				<div class="card" >
 					<div class="card-body" style="background-color: #d9d9d9;">				
@@ -29,16 +28,16 @@
 					<div class="card-body" style="background-color: #f2f2f2;">
 						<div class="row">
 							<div class="form-group col-sm-4"> 
-								<label for="nome_cad">Anilha Centrofauna:</label>
-								<input class="form-control" id="anilha_cfau" name="anilha_cfau" required="required" type="text" placeholder="Anilha Centrofauna" />
+								<label for="nome_cad">Anilha ECOAVES:</label>
+								<input class="form-control" id="anilha_cfau" name="anilha_cfau" required="required" type="text" placeholder="Anilha" />
 							</div>
 							<div class="form-group col-sm-4"> 
 								<label for="nome_cad">Anilha Original:</label>
 								<input class="form-control" id="anilha_org" name="anilha_org" type="text" placeholder="Anilha Origem" />
 							</div>
 							<div class="form-group col-sm-4"> 
-								<label for="nome_cad">Tamanho da Anilha:</label>
-								<input class="form-control" id="tm_anilha" name="tm_anilha" required="required" type="text" placeholder="Tamanho da Anilha" />
+								<label for="nome_cad">Diametro da Anilha:</label>
+								<input class="form-control" id="tm_anilha" name="tm_anilha" required="required" type="text" placeholder="Diametro da Anilha" />
 							</div>
 						</div>
 					</div>

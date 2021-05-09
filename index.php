@@ -22,6 +22,15 @@
 					<a href="/"><i class="fal fa-chart-bar"></i> Indicadores </a>
 				</li>
 				<li>
+					<a href="cadastros/cadastro_principal.php">Cadastro Principal</a>
+				</li>
+				<li>
+					<a href="cadastros/cadastro_saude_animal.php"><i class="far fa-heartbeat"></i> Saúde Animal</a>
+				</li>
+				<li>
+					<a href="listar_animais.php">Listar Animais</a>
+				</li>
+				<li>
 					<a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
 						<i class="far fa-dove"></i> Cadastros </a>
 					<ul class="collapse list-unstyled" id="homeSubmenu">
@@ -60,15 +69,6 @@
 						</li>
 					</ul>
 				</li> 
-				<li>
-					<a href="cadastros/cadastro_principal.php">Cadastro Principal</a>
-				</li>
-				<li>
-					<a href="listar_animais.php">Listar Animais</a>
-				</li>
-				<li>
-					<a href="cadastros/cadastro_saude_animal.php"><i class="far fa-heartbeat"></i> Saúde Animal</a>
-				</li>
 				<li>
 					<a href="#">Guia do Sistema</a>
 				</li>
